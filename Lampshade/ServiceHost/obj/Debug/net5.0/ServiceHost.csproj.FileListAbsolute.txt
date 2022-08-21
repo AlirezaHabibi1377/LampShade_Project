@@ -176,3 +176,4 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\01_LampshadeQuery.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\01_LampshadeQuery.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slide\Default.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategory\Default.cshtml.g.cs
