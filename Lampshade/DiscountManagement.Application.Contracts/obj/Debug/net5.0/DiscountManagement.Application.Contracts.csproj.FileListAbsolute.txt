@@ -1,0 +1,17 @@
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\DiscountManagement.Application.Contracts.deps.json
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\DiscountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\ref\DiscountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\DiscountManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.csproj.AssemblyReference.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.AssemblyInfo.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.csproj.CopyComplete
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\ref\DiscountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\obj\Debug\net5.0\DiscountManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\DiscountManagement.Application.Contracts\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

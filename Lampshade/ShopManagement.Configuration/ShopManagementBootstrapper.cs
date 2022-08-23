@@ -15,6 +15,7 @@ using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 using _01_LampshadeQuery.Contracts.Slide;
 using _01_LampshadeQuery.Query;
+using DiscountManagement.Infrastructure.EFCore;
 
 namespace ShopManagement.Configuration
 {
