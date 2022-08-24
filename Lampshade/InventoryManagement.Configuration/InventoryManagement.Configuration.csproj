@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Inventory.Application\Inventory.Application.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Application.Contract\InventoryManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Domain\InventoryManagement.Domain.csproj" />
+    <ProjectReference Include="..\InventoyManagmenet.Infrastructure.EFCore\InventoryManagement.Infrastructure.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

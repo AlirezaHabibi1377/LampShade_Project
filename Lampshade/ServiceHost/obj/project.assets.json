@@ -3245,6 +3245,80 @@
           "bin/placeholder/DiscountManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "Inventory.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Application.Contracts": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Inventory.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Inventory.Application.dll": {}
+        }
+      },
+      "InventoryManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Application.Contracts.dll": {}
+        }
+      },
+      "InventoryManagement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Inventory.Application": "1.0.0",
+          "InventoryManagement.Application.Contracts": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0",
+          "InventoryManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Configuration.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "InventoryManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "ShopManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -10036,6 +10110,31 @@
       "path": "../DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../DiscountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj"
     },
+    "Inventory.Application/1.0.0": {
+      "type": "project",
+      "path": "../Inventory.Application/Inventory.Application.csproj",
+      "msbuildProject": "../Inventory.Application/Inventory.Application.csproj"
+    },
+    "InventoryManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contracts.csproj",
+      "msbuildProject": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contracts.csproj"
+    },
+    "InventoryManagement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Configuration/InventoryManagement.Configuration.csproj",
+      "msbuildProject": "../InventoryManagement.Configuration/InventoryManagement.Configuration.csproj"
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj",
+      "msbuildProject": "../InventoryManagement.Domain/InventoryManagement.Domain.csproj"
+    },
+    "InventoryManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../InventoyManagmenet.Infrastructure.EFCore/InventoryManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../InventoyManagmenet.Infrastructure.EFCore/InventoryManagement.Infrastructure.EFCore.csproj"
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application/ShopManagement.Application.csproj",
@@ -10065,6 +10164,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "DiscountManagement.Configuration >= 1.0.0",
+      "InventoryManagement.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "ShopManagement.Configuration >= 1.0.0"
@@ -10099,6 +10199,9 @@
           "projectReferences": {
             "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountMangement.Configuration\\DiscountManagement.Configuration.csproj": {
               "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\DiscountMangement.Configuration\\DiscountManagement.Configuration.csproj"
+            },
+            "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj": {
+              "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj"
             },
             "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
               "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"

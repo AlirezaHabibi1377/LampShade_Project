@@ -197,3 +197,11 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscounts\Create.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscounts\Edit.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\ColleagueDiscounts\Index.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Configuration.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Configuration.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
