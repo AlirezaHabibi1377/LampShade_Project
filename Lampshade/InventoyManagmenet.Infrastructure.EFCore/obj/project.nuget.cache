@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9gpGEVsg0jAbvRmjO1ZpMOVvOwKYnmnVK6bo5ck4XHhrtzxqYi16uef0TZN+CQdwMzJnEGwXPwevy+i/YWlIGQ==",
+  "dgSpecHash": "IARJWvgRKf+/iTrGE+16WXe4WCRWwns9CVv1Hd2H+1PkcF5ZOpX0PXtoKl5T6sqIfVYCzx0hjgH3671rpzRGbA==",
   "success": true,
   "projectFilePath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoyManagmenet.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

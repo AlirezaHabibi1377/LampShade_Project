@@ -15,3 +15,5 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryMa
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

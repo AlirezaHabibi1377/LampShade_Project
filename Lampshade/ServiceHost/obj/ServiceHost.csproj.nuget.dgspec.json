@@ -545,6 +545,9 @@
             "projectReferences": {
               "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\Shop.Manegement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\Shop.Manegement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }

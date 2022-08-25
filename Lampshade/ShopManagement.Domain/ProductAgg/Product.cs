@@ -12,9 +12,7 @@ namespace ShopManagement.Domain.ProductAgg
     public class Product : EntityBase
     {
         public string Name { get; private set; }
-        public string  Code { get; private set; }
-        public double UnitPrice { get; private set; }
-        public bool IsInStock { get; private set; }
+        public string Code { get; private set; }
         public string ShortDescription { get; private set; }
         public string Description { get; private set; }
         public string Picture { get; private set; }
@@ -28,33 +26,13 @@ namespace ShopManagement.Domain.ProductAgg
         public List<ProductPicture> ProductPictures { get; private set; }
 
 
-        public Product(string name, string code, double unitPrice, 
-            string shortDescription, string description, 
-            string picture, string pictureAlt, string pictureTitle, 
-            long categoryId, string slug, string keywords, string metaDescription)
-        {
-            Name = name;
-            Code = code;
-            UnitPrice = unitPrice;
-            ShortDescription = shortDescription;
-            Description = description;
-            Picture = picture;
-            PictureAlt = pictureAlt;
-            PictureTitle = pictureTitle;
-            CategoryId = categoryId;
-            Slug = slug;
-            Keywords = keywords;
-            MetaDescription = metaDescription;
-        }
-
-        public void Edit(string name, string code, double unitPrice,
+        public Product(string name, string code,
             string shortDescription, string description,
             string picture, string pictureAlt, string pictureTitle,
             long categoryId, string slug, string keywords, string metaDescription)
         {
             Name = name;
             Code = code;
-            UnitPrice = unitPrice;
             ShortDescription = shortDescription;
             Description = description;
             Picture = picture;
@@ -64,18 +42,24 @@ namespace ShopManagement.Domain.ProductAgg
             Slug = slug;
             Keywords = keywords;
             MetaDescription = metaDescription;
-            IsInStock = true;
         }
 
-        public void InStock()
+        public void Edit(string name, string code,
+            string shortDescription, string description,
+            string picture, string pictureAlt, string pictureTitle,
+            long categoryId, string slug, string keywords, string metaDescription)
         {
-            IsInStock = true;
+            Name = name;
+            Code = code;
+            ShortDescription = shortDescription;
+            Description = description;
+            Picture = picture;
+            PictureAlt = pictureAlt;
+            PictureTitle = pictureTitle;
+            CategoryId = categoryId;
+            Slug = slug;
+            Keywords = keywords;
+            MetaDescription = metaDescription;
         }
-
-        public void NotInStock()
-        {
-            IsInStock = false;
-        }
-
     }
 }

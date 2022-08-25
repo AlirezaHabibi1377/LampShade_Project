@@ -2493,9 +2493,22 @@
           "DiscountManagement.Infrastructure.EFCore.dll": {}
         }
       },
+      "Inventory.Application/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Application.Contracts": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Inventory.Application.dll": {}
+        },
+        "compile": {
+          "Inventory.Application.dll": {}
+        }
+      },
       "InventoryManagement.Application.Contracts/1.0.0": {
         "dependencies": {
-          "0_Framework": "1.0.0"
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
         },
         "runtime": {
           "InventoryManagement.Application.Contracts.dll": {}
@@ -2506,6 +2519,7 @@
       },
       "InventoryManagement.Configuration/1.0.0": {
         "dependencies": {
+          "Inventory.Application": "1.0.0",
           "InventoryManagement.Application.Contracts": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
           "InventoryManagement.Infrastructure.EFCore": "1.0.0",
@@ -5697,6 +5711,11 @@
       "sha512": ""
     },
     "DiscountManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Inventory.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

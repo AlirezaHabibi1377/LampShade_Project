@@ -36,9 +36,7 @@ namespace InventoryManagement.Domain.InventoryAgg
         public void Increase(long count, long operatorId, string description)
         {
             var currentCount = CalculateCurrentCount() + count;
-            var operation = new InventoryOperation(true, count, operatorId, currentCount, description
-                , 0, Id);
-
+            var operation = new InventoryOperation(true, count, operatorId, currentCount, description, 0, Id);
             Operations.Add(operation);
 
             //if (currentCount > 0)
@@ -48,13 +46,10 @@ namespace InventoryManagement.Domain.InventoryAgg
 
             InStock = currentCount > 0;
         }
-
         public void Reduce(long count, long operatorId, string description, long orderId)
         {
             var currentCount = CalculateCurrentCount() - count;
-            var operation = new InventoryOperation(true, count, operatorId, currentCount, description
-                , orderId, Id);
-
+            var operation = new InventoryOperation(false, count, operatorId, currentCount, description, orderId, Id);
             Operations.Add(operation);
             InStock = currentCount > 0;
         }
