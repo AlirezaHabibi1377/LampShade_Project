@@ -1,9 +1,8 @@
 ﻿@page
-@model ServiceHost.Pages.ProductCategoryModel
+@model ServiceHost.Pages.SearchModel
 @{
-    ViewData["Title"] = "گروه محصولات";
+    ViewData["Title"] = "نتیجه جستجو";
 }
-
 <div class="breadcrumb-area section-space--half">
     <div class="container wide">
         <div class="row">
@@ -12,11 +11,9 @@
                 <div class="breadcrumb-wrapper breadcrumb-bg">
                     <!--=======  breadcrumb content  =======-->
                     <div class="breadcrumb-content">
-                        <h2 class="breadcrumb-content__title">@Model.ProductCategory.Name</h2>
-                        <h3>@Model.ProductCategory.Description</h3>
+                        <h2 class="breadcrumb-content__title">نتیجه جستجو : @Model.Value</h2>
                         <ul class="breadcrumb-content__page-map">
                             <li><a asp-page="./Index">صفحه اصلی</a></li>
-                            <li class="active">@Model.ProductCategory.Name</li>
                         </ul>
                     </div>
                     <!--=======  End of breadcrumb content  =======-->
@@ -44,28 +41,28 @@
                                         </div>
                                     </div>
 
-                                    <div class="shop-header__right">
+                                    @*<div class="shop-header__right">
 
-                                        <div class="single-select-block d-inline-block">
-                                            <span class="select-title">Show:</span>
-                                            <select>
-                                                <option value="1">10</option>
-                                                <option value="2">20</option>
-                                                <option value="3">30</option>
-                                                <option value="4">40</option>
-                                            </select>
-                                        </div>
+                                            <div class="single-select-block d-inline-block">
+                                                <span class="select-title">Show:</span>
+                                                <select>
+                                                    <option value="1">10</option>
+                                                    <option value="2">20</option>
+                                                    <option value="3">30</option>
+                                                    <option value="4">40</option>
+                                                </select>
+                                            </div>
 
-                                        <div class="single-select-block d-inline-block">
-                                            <span class="select-title">Sort By:</span>
-                                            <select class="pr-0">
-                                                <option value="1">Default</option>
-                                                <option value="2">Name (A-Z)</option>
-                                                <option value="3">Price (min - max)</option>
-                                                <option value="4">Color</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                                            <div class="single-select-block d-inline-block">
+                                                <span class="select-title">Sort By:</span>
+                                                <select class="pr-0">
+                                                    <option value="1">Default</option>
+                                                    <option value="2">Name (A-Z)</option>
+                                                    <option value="3">Price (min - max)</option>
+                                                    <option value="4">Color</option>
+                                                </select>
+                                            </div>
+                                        </div>*@
                                 </div>
                                 <!--=======  End of shop page header  =======-->
                             </div>
@@ -75,7 +72,7 @@
                                 <div class="shop-page-content">
 
                                     <div class="row shop-product-wrap grid three-column">
-                                        @foreach (var product in Model.ProductCategory.Products)
+                                        @foreach (var product in Model.Products)
                                         {
                                             <div class="col-12 col-lg-4 col-md-4 col-sm-6">
                                                 <!--=======  product grid view  =======-->
@@ -107,7 +104,7 @@
                                                     <div class="single-grid-product__content">
                                                         <div class="single-grid-product__category-rating">
                                                             <span class="category">
-                                                                <a asp-page="/ProductCategory" asp-route-id="@Model.ProductCategory.Slug">@Model.ProductCategory.Name</a>
+                                                                <a asp-page="/ProductCategory" asp-route-id="@product.CategorySlug">@product.Category</a>
                                                             </span>
                                                             <span class="rating">
                                                                 <i class="ion-android-star active"></i>
@@ -146,14 +143,9 @@
                                                     </div>
                                                 </div>
                                                 <!--=======  End of product grid view  =======-->
-
                                             </div>
                                         }
-
-
-
                                     </div>
-
                                 </div>
 
                                 <!--=======  pagination area =======-->

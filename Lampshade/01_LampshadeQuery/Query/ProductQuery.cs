@@ -88,5 +88,77 @@ namespace _01_LampshadeQuery.Query
             return products;
 
         }
+
+        public List<ProductQueryModel> Search(string value)
+        {
+            var inventory = _inventoryContext.Inventory
+                .Select(x => new
+                {
+                    x.ProductId,
+                    x.UnitPrice,
+                })
+                .ToList();
+
+            var discounts = _discountContext.CustomerDiscounts
+                .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
+                .Select(x => new
+                {
+                    x.DiscountRate,
+                    x.ProductId,
+                    x.EndDate
+                })
+                .ToList();
+
+            var query = _context.Products
+                .Include(a => a.Category)
+                .Select(x => new ProductQueryModel()
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Picture = x.Picture,
+                    PictureAlt = x.PictureAlt,
+                    PictureTitle = x.PictureTitle,
+                    Category = x.Category.Name,
+                    ShortDescription = x.ShortDescription,
+                    CategorySlug = x.Category.Slug,
+                    Slug = x.Slug,
+                }).AsNoTracking();
+
+            if (!string.IsNullOrWhiteSpace(value))
+            {
+                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription.Contains(value));
+            }
+
+            var products = query.OrderByDescending(x => x.Id).ToList();
+
+            foreach (var product in products)
+            {
+                var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
+                if (productInventory != null)
+                {
+                    var price = productInventory.UnitPrice;
+                    product.Price = price.ToMoney();
+                    var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
+                    if (discount != null)
+                    {
+                        int discountRate = discount.DiscountRate;
+                        product.DiscountRate = discountRate;
+                        product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
+                        if (product.DiscountRate > 0)
+                        {
+                            product.HasDiscount = true;
+                        }
+                        else
+                        {
+                            product.HasDiscount = false;
+                        }
+
+                        var discountAmount = Math.Round((price * product.DiscountRate) / 100);
+                        product.PriceWithDiscount = (price - discountAmount).ToMoney();
+                    }
+                }
+            }
+            return products;
+        }
     }
 }
