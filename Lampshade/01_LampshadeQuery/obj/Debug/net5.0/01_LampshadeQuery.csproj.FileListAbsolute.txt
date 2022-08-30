@@ -19,3 +19,15 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_Lampshad
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\obj\Debug\net5.0\01_LampshadeQuery.csproj.CopyComplete
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Infrastructure.EFCore.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\DiscountManagement.Domain.pdb

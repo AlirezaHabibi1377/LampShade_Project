@@ -213,3 +213,8 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduce.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OperationLog.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\ProductCategoryWithProduct\Default.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArrival\Default.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs

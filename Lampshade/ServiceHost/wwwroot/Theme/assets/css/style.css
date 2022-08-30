@@ -59,10 +59,10 @@ body {
 
 body {
     font-family: 'IranSans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     font-style: normal;
-    line-height: 2.4;
+    /*line-height: 2@import url('file:///D:\Asp.Net Core _ Very important\MVC_Final_Project\Code\Lampshade\ServiceHost\wwwroot\AdminTheme\assets\css\style.css');.4;*/
     position: relative;
     visibility: visible;
     color: #000;
@@ -2352,10 +2352,11 @@ select {
     }
 
 .single-grid-product__price .main-price {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    color: #333;
+    color: #929292;
+    margin-right: 10px;
 }
 
     .single-grid-product__price .main-price.discounted {
@@ -2363,7 +2364,7 @@ select {
     }
 
 .single-grid-product__price .discounted-price {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 22px;
     margin-right: 10px;
