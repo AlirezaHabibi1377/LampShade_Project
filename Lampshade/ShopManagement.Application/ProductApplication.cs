@@ -49,7 +49,7 @@ namespace ShopManagement.Application
         {
             var operation = new OperationResult();
 
-            var product = _productRepository.GetCategoryWithCategory(command.Id);
+            var product = _productRepository.GetProductWithCategory(command.Id);
             if (product == null)
             {
                 return operation.Failed(ApplicationMessages.RecordNotFound);

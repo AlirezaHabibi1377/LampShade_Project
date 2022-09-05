@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Domain.ProductPictureAgg;
 
@@ -24,11 +25,18 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return _context.ProductPictures.Select(x => new EditProductPicture
             {
                 Id = x.Id,
-                Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 ProductId = x.ProductId,
                 PictureTitle = x.PictureTitle
             }).FirstOrDefault(x=>x.Id == id);
+        }
+
+        public ProductPicture GetWithProductAndCategory(long id)
+        {
+            return _context.ProductPictures
+                .Include(x => x.Product)
+                .ThenInclude(x => x.Category)
+                .FirstOrDefault(x => x.Id == id);
         }
 
         public List<ProductPictureViewModel> Search(ProductPictureSearchModel searchModel)

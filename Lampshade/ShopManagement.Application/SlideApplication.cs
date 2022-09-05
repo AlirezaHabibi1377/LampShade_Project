@@ -5,23 +5,31 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.Slide;
+using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.SlideAgg;
 
 namespace ShopManagement.Application
 {
     public class SlideApplication : ISlideApplication
     {
+        private readonly IProductCategoryRepository _productCategoryRepository;
         private readonly ISlideRepository _slideRepository;
+        private readonly IFileUploader _fileUploader;
 
-        public SlideApplication(ISlideRepository slideRepository)
+        public SlideApplication(ISlideRepository slideRepository, IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
         {
             _slideRepository = slideRepository;
+            _productCategoryRepository = productCategoryRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateSlide command)
         {
             var operation = new OperationResult();
-            var slide = new Slide(command.Picture, command.PictureAlt, command.Title,
+
+            var picturePath = _fileUploader.Upload(command.Picture, "slides");
+
+            var slide = new Slide(picturePath, command.PictureAlt, command.Title,
                 command.Heading, command.Title, command.Text, command.BtnText, command.Link);
             _slideRepository.Create(slide);
             _slideRepository.SaveChanges();
@@ -38,8 +46,9 @@ namespace ShopManagement.Application
             {
                 return operation.Failed(ApplicationMessages.RecordNotFound);
             }
+            var picturePath = _fileUploader.Upload(command.Picture, "slides");
 
-            Slide.Edit(command.Picture, command.PictureAlt, command.Title,
+            Slide.Edit(picturePath, command.PictureAlt, command.Title,
                 command.Heading, command.Title, command.Text, command.BtnText, command.Link);
             _slideRepository.SaveChanges();
 
