@@ -27,7 +27,7 @@
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.Name"></label>
-                        <input class="form-control" asp-for="SearchModel.Name" placeholder="نام گروه محصولی" >
+                        <input class="form-control" asp-for="SearchModel.Name" placeholder="نام گروه محصولی">
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">مشاهده همه</a>
@@ -57,23 +57,28 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach(var item in Model.ProductCategories)
-                            {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>
-                                        <img src="@item.Picture" style="width: 70px; height: 70px"/>
-                                    </td>
-                                    <td>@item.Name</td>
-                                    <td>@item.CreationDate</td>
-                                    <td>
-                                        <a class="btn btn-warning pull-right m-rl-5"
-                                           href="#showmodal=@Url.Page("./Index","Edit",new {id = item.Id})">
-                                            <i class="fa fa-edit"></i> ویرایش
-                                        </a>
-                                    </td>
-                                </tr>
-                            }
+                                @foreach (var item in Model.ProductCategories)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+
+                                        <td>
+                                            <img src="~/ProductPictures/@item.Picture" style="width: 70px; height: 70px" />
+                                        </td>
+
+                                        <td>@item.Name</td>
+
+                                        <td>@item.CreationDate</td>
+
+                                        <td>
+                                            <a class="btn btn-warning pull-right m-rl-5"
+                                               href="#showmodal=@Url.Page("./Index","Edit",new {id = item.Id})">
+                                                <i class="fa fa-edit"></i> ویرایش
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>
@@ -84,12 +89,12 @@
 </div>
 
 @section Scripts {
-<script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
-<script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+    <script src="~/adminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/adminTheme/assets/datatables/dataTables.bootstrap.js"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function () {
             $('#datatable').dataTable();
         });
-</script>
+    </script>
 }
