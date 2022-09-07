@@ -17,6 +17,8 @@ using ShopManagement.Infrastructure.EFCore.Repository;
 using _01_LampshadeQuery.Contracts.Slide;
 using _01_LampshadeQuery.Query;
 using DiscountManagement.Infrastructure.EFCore;
+using ShopManagement.Application.Contracts.Comment;
+using ShopManagement.Domain.CommentAgg;
 
 namespace ShopManagement.Configuration
 {
@@ -40,6 +42,9 @@ namespace ShopManagement.Configuration
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
 
             services.AddTransient<IProductQuery, ProductQuery>();
+
+            services.AddTransient<ICommentRepository, CommentRepository>();
+            services.AddTransient<ICommentApplication, CommentApplication>();
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
         }
