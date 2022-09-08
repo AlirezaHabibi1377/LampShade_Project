@@ -1,0 +1,15 @@
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\bin\Debug\net5.0\ArticleCategory.Application.Contracts.deps.json
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\bin\Debug\net5.0\ArticleCategory.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\bin\Debug\net5.0\ref\ArticleCategory.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\bin\Debug\net5.0\ArticleCategory.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\bin\Debug\net5.0\0_Framework.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\bin\Debug\net5.0\0_Framework.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.csproj.AssemblyReference.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.AssemblyInfoInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.AssemblyInfo.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.csproj.CopyComplete
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ref\ArticleCategory.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ArticleCategory.Application.Contracts\obj\Debug\net5.0\ArticleCategory.Application.Contracts.pdb

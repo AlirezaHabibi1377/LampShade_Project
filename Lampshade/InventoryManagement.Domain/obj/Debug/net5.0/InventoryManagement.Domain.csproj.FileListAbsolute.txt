@@ -4,8 +4,10 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryMa
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\InventoryManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.csproj.AssemblyReference.cache
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.AssemblyInfoInputs.cache
@@ -15,5 +17,3 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryMa
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\ref\InventoryManagement.Domain.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\obj\Debug\net5.0\InventoryManagement.Domain.pdb
-D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.dll
-D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb

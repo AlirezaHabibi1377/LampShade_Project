@@ -1,0 +1,17 @@
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Domain.deps.json
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\ref\BlogManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\0_Framework.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.csproj.AssemblyReference.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.AssemblyInfoInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.AssemblyInfo.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.csproj.CoreCompileInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.csproj.CopyComplete
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\ref\BlogManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\BlogManagement.Domain\obj\Debug\net5.0\BlogManagement.Domain.pdb
