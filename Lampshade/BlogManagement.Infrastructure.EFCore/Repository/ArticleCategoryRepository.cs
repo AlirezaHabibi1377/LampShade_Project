@@ -19,6 +19,12 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
+        public string GetSlugBy(long id)
+        {
+            return _context.ArticleCategories.Select(x => new { x.Id, x.Slug })
+                .FirstOrDefault(x => x.Id == id).Slug;
+        }
+
         public List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel)
         {
             var query = _context.ArticleCategories.Select(x => new ArticleCategoryViewModel
@@ -36,7 +42,7 @@ namespace BlogManagement.Infrastructure.EFCore.Repository
                 query = query.Where(x => x.Name.Contains(searchModel.Name));
             }
 
-            return query.OrderByDescending(x=>x.ShowOrder).ToList();
+            return query.OrderByDescending(x => x.ShowOrder).ToList();
         }
 
         public EditArticleCategory GetDetails(long id)
