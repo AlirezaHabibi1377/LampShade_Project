@@ -1,7 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ProductModel
 @{
-    ViewData["Title"] = "محصولات";
+    ViewData["Title"] = @Model.Product.Name;
+    ViewData["keywords"] = @Model.Product.keywords;
+    ViewData["metaDescription"] = @Model.Product.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -115,7 +117,7 @@
                                         <p class="single-info">
                                             <a asp-page="/ProductCategory" asp-route-id="@Model.Product.CategorySlug">@Model.Product.Category</a>
                                         </p>
-                                        <h4 class="product-title">@Model.Product.Name</h4>
+                                        <h2 class="product-title">@Model.Product.Name</h2>
                                         <div class="product-rating">
                                             <span class="rating">
                                                 <i class="ion-android-star active"></i>
@@ -241,66 +243,66 @@
 
                                                 <div class="product-rating-wrap">
                                                     @*<div class="pro-avg-rating">
-                                                        <h4>4.5 <span>(Overall)</span></h4>
-                                                        <span>Based on 9 Comments</span>
-                                                    </div>*@
+                                                            <h4>4.5 <span>(Overall)</span></h4>
+                                                            <span>Based on 9 Comments</span>
+                                                        </div>*@
                                                     @*<div class="rating-list">
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <span>(5)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(3)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(1)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(0)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(0)</span>
-                                                        </div>
-                                                    </div>*@
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>(5)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(3)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(0)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(0)</span>
+                                                            </div>
+                                                        </div>*@
                                                     <div class="ratings-wrapper">
-                                                        
+
                                                         @foreach (var comment in Model.Product.Comments)
                                                         {
                                                             <div class="sin-ratings">
                                                                 <div class="rating-author">
                                                                     <h3>@comment.Name</h3>
                                                                     @*<div class="rating-star">
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <i class="fa fa-star"></i>
-                                                                        <span>(5)</span>
-                                                                    </div>*@
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <span>(5)</span>
+                                                                        </div>*@
                                                                 </div>
                                                                 <p>
                                                                     @comment.Message
@@ -314,15 +316,15 @@
                                                         <form method="post">
                                                             <div class="rating-form row">
                                                                 @*<div class="col-12 mb-15">
-                                                                    <h5>Rating:</h5>
-                                                                    <div class="rating-star fix">
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                    </div>
-                                                                </div>*@
+                                                                        <h5>Rating:</h5>
+                                                                        <div class="rating-star fix">
+                                                                            <i class="fa fa-star-o"></i>
+                                                                            <i class="fa fa-star-o"></i>
+                                                                            <i class="fa fa-star-o"></i>
+                                                                            <i class="fa fa-star-o"></i>
+                                                                            <i class="fa fa-star-o"></i>
+                                                                        </div>
+                                                                    </div>*@
                                                                 <div class="col-md-6 col-12 form-group">
                                                                     <label for="name">نام:</label>
                                                                     <input id="name" placeholder="مثال: علیرضا حبیبی" name="name" type="text">
@@ -338,8 +340,8 @@
                                                                            type="text">
                                                                 </div>
 
-                                                                <input type="hidden" name="productId" value="@Model.Product.Id"/>
-                                                                <input type="hidden" name="productSlug" value="@Model.Product.Slug"/>
+                                                                <input type="hidden" name="productId" value="@Model.Product.Id" />
+                                                                <input type="hidden" name="productSlug" value="@Model.Product.Slug" />
 
                                                                 <div class="col-12">
                                                                     <input value="ارسال" type="submit">

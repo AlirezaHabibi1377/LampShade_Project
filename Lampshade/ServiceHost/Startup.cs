@@ -1,3 +1,5 @@
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using _0_Framework.Application;
 using BlogManagement.Configuration;
 using DiscountManagement.Configuration;
@@ -28,6 +30,8 @@ namespace ServiceHost
             DiscountManagementBootstrapper.Configure(services, connectionString);
             InventoryManagementBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services, connectionString);
+
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
 
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddRazorPages();
