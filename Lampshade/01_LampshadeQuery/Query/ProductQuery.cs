@@ -8,7 +8,6 @@ using _01_LampshadeQuery.Contracts.Product;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 
@@ -66,8 +65,7 @@ namespace _01_LampshadeQuery.Query
                     ShortDescription = product.ShortDescription,
                     MetaDescription = product.MetaDescription,
                     keywords = product.Keywords,
-                    Pictures = MapProductPictures(product.ProductPictures),
-                    Comments = MapComment(product.Comments)
+                    Pictures = MapProductPictures(product.ProductPictures)
                 }).FirstOrDefault(x => x.Slug == slug);
 
             if (product == null)
@@ -105,15 +103,15 @@ namespace _01_LampshadeQuery.Query
             return product;
         }
 
-        private static List<CommentQueryModel> MapComment(List<Comment> comments)
-        {
-            return comments.Where(x => !x.IsCanceled).Where(x => x.IsConfirmed).Select(x => new CommentQueryModel
-            {
-                Id = x.Id,
-                Message = x.Message,
-                Name = x.Name
-            }).OrderByDescending(x=>x.Id).ToList();
-        }
+        //private static List<CommentQueryModel> MapComment(List<Comment> comments)
+        //{
+        //    return comments.Where(x => !x.IsCanceled).Where(x => x.IsConfirmed).Select(x => new CommentQueryModel
+        //    {
+        //        Id = x.Id,
+        //        Message = x.Message,
+        //        Name = x.Name
+        //    }).OrderByDescending(x=>x.Id).ToList();
+        //}
 
         private static List<ProductPictureQueryModel> MapProductPictures(List<ProductPicture> pictures)
         {

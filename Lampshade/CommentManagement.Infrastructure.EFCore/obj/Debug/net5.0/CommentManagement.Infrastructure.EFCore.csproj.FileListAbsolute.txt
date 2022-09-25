@@ -1,0 +1,5 @@
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.AssemblyInfo.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\CommentManagement.Infrastructure.EFCore\obj\Debug\net5.0\CommentManagement.Infrastructure.EFCore.csproj.CoreCompileInputs.cache
