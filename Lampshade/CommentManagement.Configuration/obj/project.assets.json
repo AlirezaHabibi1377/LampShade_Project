@@ -1636,7 +1636,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "0_Framework": "1.0.0",
           "CommentManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"

@@ -17,7 +17,6 @@ namespace CommentManagement.Domain.CommentAgg
         public int Type { get; private set; }
         public long ParentId { get; private set; }
         public Comment Parent { get; private set; }
-        public List<Comment> Children { get; private set; }
 
 
         public Comment(string name, string email, string website, string message, long ownerRecordId, long parentId, int type)

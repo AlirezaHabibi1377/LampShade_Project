@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "leFhIUDTl+lcz+2vVijwISmJ4JJd/w3OMsNnud3okMDgAdcK5FCzzR++hqh938o6IXcQwOynqmJXcY4a3DZi1Q==",
+  "dgSpecHash": "nGuaFLmK3BO8w9KzPorAGpFZl7GJckhAnIWHzbGs8IwUT0Lr60Oeba7k8yI8lgSMe29nTVY/RCyJj3hOgODjBg==",
   "success": true,
   "projectFilePath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

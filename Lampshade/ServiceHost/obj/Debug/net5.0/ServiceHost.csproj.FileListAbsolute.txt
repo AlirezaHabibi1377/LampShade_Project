@@ -199,7 +199,6 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_AdminLayout.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_Menu.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Comments\Index.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Create.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Edit.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\ProductCategories\Index.cshtml.g.cs
@@ -244,3 +243,14 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\LatestArticles\Default.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Comments\Index.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Configuration.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Configuration.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb
