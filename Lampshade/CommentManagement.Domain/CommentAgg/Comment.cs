@@ -13,7 +13,6 @@ namespace CommentManagement.Domain.CommentAgg
         public bool IsCanceled { get; private set; }
         public long ProductId { get; private set; }
         public long OwnerRecordId { get; private set; }
-        public string OwnerName { get; private set; }
         public int Type { get; private set; }
         public long ParentId { get; private set; }
         public Comment Parent { get; private set; }

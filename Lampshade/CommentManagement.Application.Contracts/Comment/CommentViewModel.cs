@@ -1,4 +1,6 @@
-﻿namespace CommentManagement.Application.Contracts.Comment
+﻿using System.Collections.Generic;
+
+namespace CommentManagement.Application.Contracts.Comment
 {
     public class CommentViewModel
     {

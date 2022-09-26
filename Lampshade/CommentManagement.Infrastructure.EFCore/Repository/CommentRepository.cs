@@ -28,7 +28,6 @@ namespace CommentManagement.Infrastructure.EFCore.Repository
                     IsConfirmed = x.IsConfirmed,
                     Message = x.Message,
                     OwnerRecordId = x.OwnerRecordId,
-                    OwnerName = x.OwnerName,
                     Type = x.Type,
                     CommentDate = x.CreationDate.ToFarsi()
                 });

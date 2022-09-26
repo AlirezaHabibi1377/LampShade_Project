@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _01_LampshadeQuery.Contracts.Product;
 
 namespace _01_LampshadeQuery.Contracts.Article
 {
     public class ArticleQueryModel
     {
+        public long Id { get; set; }
         public string Title { get; set; }
         public string ShortDescription { get; set; }
         public string Description { get; set; }
@@ -23,5 +25,6 @@ namespace _01_LampshadeQuery.Contracts.Article
         public string Category { get; set; }
         public string CategorySlug { get; set; }
         public List<string> KeywordList { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
     }
 }
