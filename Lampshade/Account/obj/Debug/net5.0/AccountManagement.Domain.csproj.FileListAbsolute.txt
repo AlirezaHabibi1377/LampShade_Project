@@ -1,0 +1,17 @@
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\AccountManagement.Domain.deps.json
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\ref\AccountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\0_Framework.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\0_Framework.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.csproj.AssemblyReference.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.AssemblyInfoInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.AssemblyInfo.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.csproj.CoreCompileInputs.cache
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.csproj.CopyComplete
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\ref\AccountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\Account\obj\Debug\net5.0\AccountManagement.Domain.pdb
