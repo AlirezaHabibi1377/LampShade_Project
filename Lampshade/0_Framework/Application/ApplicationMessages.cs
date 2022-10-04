@@ -12,5 +12,6 @@ namespace _0_Framework.Application
         public const string RecordNotFound = "رکورد با اطلاعات درخواست شده یافت نشد. لطفا مجدد تلاش بفرمایید.";
 
         public static string PasswordsNotMatch = "پسورد با تکرار آن مطابقت ندارد";
+        public static string WrongUserPass = "کاربری با این نام کاربری و رمز عبور یافت نشد";
     }
 }
