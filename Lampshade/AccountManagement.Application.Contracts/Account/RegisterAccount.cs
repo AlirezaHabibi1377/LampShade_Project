@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace AccountManagement.Application.Contracts.Account
 {
-    public class CreateAccount
+    public class RegisterAccount
     {
         public string Fullname { get; set; }
         public string Username { get; set; }

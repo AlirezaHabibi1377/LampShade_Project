@@ -24,7 +24,7 @@ namespace AccountManagement.Application
             _authHelper = authHelper;
         }
 
-        public OperationResult Create(CreateAccount command)
+        public OperationResult Create(RegisterAccount command)
         {
             var operation = new OperationResult();
             if (_accountRepository.Exists(x => x.Username == command.Username

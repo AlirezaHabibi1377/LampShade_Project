@@ -272,3 +272,4 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Edit.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Index.cshtml.g.cs
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.cshtml.g.cs

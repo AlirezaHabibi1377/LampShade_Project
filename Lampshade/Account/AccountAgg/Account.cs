@@ -23,6 +23,12 @@ namespace AccountManagement.Domain.AccountAgg
             Password = password;
             Mobile = mobile;
             RoleId = roleId;
+
+            if (RoleId == 0)
+            {
+                RoleId = 2;
+            }
+            
             ProfilePhoto = profilePhoto;
         }
 
