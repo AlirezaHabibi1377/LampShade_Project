@@ -43,6 +43,8 @@
     <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="~/AdminTheme/assets/js/modernizr.min.js"></script>
 
+    @RenderSection("Css", false)
+
 </head>
 
 <body class="fixed-left">
@@ -388,6 +390,7 @@
     <script src="~/AdminTheme/assets/js/site.js"></script>
 
     @RenderSection("Scripts", false)
+
     <script>
         $('.persianDateInput').persianDatepicker({
             format: 'YYYY/MM/DD',

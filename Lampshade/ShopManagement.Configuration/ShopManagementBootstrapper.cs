@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using _0_Framework.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.Product;
@@ -15,6 +16,7 @@ using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 using _01_LampshadeQuery.Contracts.Slide;
 using _01_LampshadeQuery.Query;
+using ShopManagement.Configuration.Permissions;
 
 namespace ShopManagement.Configuration
 {
@@ -38,6 +40,8 @@ namespace ShopManagement.Configuration
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
 
             services.AddTransient<IProductQuery, ProductQuery>();
+
+            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
             
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));
