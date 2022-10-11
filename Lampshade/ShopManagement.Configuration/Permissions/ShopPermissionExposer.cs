@@ -16,20 +16,20 @@ namespace ShopManagement.Configuration.Permissions
                 {
                     "Product", new List<PermissionDto>
                     {
-                    new PermissionDto("ListProducts", 10),
-                    new PermissionDto("SearchProducts", 11),
-                    new PermissionDto("CreateProduct", 12),
-                    new PermissionDto("EditProduct", 13),
+                    new PermissionDto("ListProducts", ShopPermissions.ListProducts),
+                    new PermissionDto("SearchProducts", ShopPermissions.SearchProducts),
+                    new PermissionDto("CreateProduct", ShopPermissions.CreateProduct),
+                    new PermissionDto("EditProduct", ShopPermissions.EditProduct),
                     }
                 },
                 
                 {
                     "ProductCategory", new List<PermissionDto>
                     {
-                    new PermissionDto("ListProductCategories", 20),
-                    new PermissionDto("SearchProductCategories", 21),
-                    new PermissionDto("CreateProductCategory", 22),
-                    new PermissionDto("EditProductCategory", 23),
+                    new PermissionDto("ListProductCategories", ShopPermissions.ListProductCategories),
+                    new PermissionDto("SearchProductCategories", ShopPermissions.SearchProductCategories),
+                    new PermissionDto("CreateProductCategory", ShopPermissions.CreateProductCategory),
+                    new PermissionDto("EditProductCategory", ShopPermissions.EditProductCategory),
                     }
                 }
             };

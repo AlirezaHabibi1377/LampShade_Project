@@ -1,4 +1,5 @@
 ﻿@page
+@using InventoryManagement.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Inventory.IndexModel
 @{
 }
@@ -8,7 +9,7 @@
     ViewData["title"] = "مدیریت انبار";
 }
 
-<div class="row">
+<div class="row" permission="@InventoryPermissions.CreateInventory">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
@@ -17,7 +18,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" permission="@InventoryPermissions.SearchInventory">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -31,7 +32,7 @@
                             <option value="0">انتخاب محصول....</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group m-r-10">
                         <div class="checkbox checkbox-primary">
                             <input asp-for="SearchModel.InStock">
@@ -49,7 +50,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" permission="@InventoryPermissions.ListInventory" >
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -72,36 +73,36 @@
                             <tbody>
                                 @foreach (var item in Model.Inventory)
                                 {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>@item.Product</td>
-                                    <td>@item.UnitPrice</td>
-                                    <td>@item.CurrentCount</td>
-                                    <td>@item.CreationDate</td>
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Product</td>
+                                        <td>@item.UnitPrice</td>
+                                        <td>@item.CurrentCount</td>
+                                        <td>@item.CreationDate</td>
 
-                                    <td>
-                                        <a class="btn btn-warning waves-effect waves-light m-b-5"
-                                           href="#showmodal=@Url.Page("./Index","Edit",new {id = item.Id})">
-                                            <i class="fa fa-edit"></i> ویرایش
-                                        </a>
-                                        
-                                        <a class="btn btn-success waves-effect waves-light m-b-5"
-                                           href="#showmodal=@Url.Page("./Index","Increase",new {id = item.Id})">
-                                            <i class="fa fa-plus"></i> افزایش موجودی
-                                        </a>
-                                        
-                                        <a class="btn btn-danger waves-effect waves-light m-b-5"
-                                           href="#showmodal=@Url.Page("./Index","Reduce",new {id = item.Id})">
-                                            <i class="fa fa-minus"></i> کاهش موجودی
-                                        </a>
-                                        
-                                        <a class="btn btn-primary waves-effect waves-light m-b-5"
-                                           href="#showmodal=@Url.Page("./Index","Log",new {id = item.Id})"
-                                           onclick="$('.modal-dialog').css('width','60%')">
-                                            <i class="fa fa-recycle"></i>مشاهده گردش انبار
-                                        </a>
-                                    </td>
-                                </tr>
+                                        <td>
+                                            <a permission="@InventoryPermissions.EditInventory" class="btn btn-warning waves-effect waves-light m-b-5"
+                                               href="#showmodal=@Url.Page("./Index","Edit",new {id = item.Id})">
+                                                <i class="fa fa-edit"></i> ویرایش
+                                            </a>
+
+                                            <a permission="@InventoryPermissions.Increase" class="btn btn-success waves-effect waves-light m-b-5"
+                                               href="#showmodal=@Url.Page("./Index","Increase",new {id = item.Id})">
+                                                <i class="fa fa-plus"></i> افزایش موجودی
+                                            </a>
+
+                                            <a permission="@InventoryPermissions.Reduce"class="btn btn-danger waves-effect waves-light m-b-5"
+                                               href="#showmodal=@Url.Page("./Index","Reduce",new {id = item.Id})">
+                                                <i class="fa fa-minus"></i> کاهش موجودی
+                                            </a>
+
+                                            <a permission="@InventoryPermissions.OperationLog" class="btn btn-primary waves-effect waves-light m-b-5"
+                                               href="#showmodal=@Url.Page("./Index","Log",new {id = item.Id})"
+                                               onclick="$('.modal-dialog').css('width','60%')">
+                                                <i class="fa fa-recycle"></i>مشاهده گردش انبار
+                                            </a>
+                                        </td>
+                                    </tr>
                                 }
                             </tbody>
                         </table>

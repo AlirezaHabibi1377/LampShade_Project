@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using _0_Framework.Application;
 using AccountManagement.Domain.AccountAgg;
+using AccountManagement.Domain.RoleAgg;
 
 namespace AccountManagement.Application
 {
@@ -15,13 +16,15 @@ namespace AccountManagement.Application
         private readonly IPasswordHasher _passwordHasher;
         private readonly IFileUploader _fileUploader;
         private readonly IAuthHelper _authHelper;
+        private readonly IRoleRepository _roleRepository;
 
-        public AccountApplication(IAccountRepository accountRepository, IPasswordHasher passwordHasher, IFileUploader fileUploader, IAuthHelper authHelper)
+        public AccountApplication(IAccountRepository accountRepository, IPasswordHasher passwordHasher, IFileUploader fileUploader, IAuthHelper authHelper, IRoleRepository roleRepository)
         {
             _accountRepository = accountRepository;
             _passwordHasher = passwordHasher;
             _fileUploader = fileUploader;
             _authHelper = authHelper;
+            _roleRepository = roleRepository;
         }
 
         public OperationResult Create(RegisterAccount command)
@@ -120,7 +123,13 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.WrongUserPass);
             }
 
-            var user = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username);
+            var permissions = _roleRepository
+                .Get(account.RoleId)
+                .Permissions
+                .Select(x => x.Code)
+                .ToList();
+
+            var user = new AuthViewModel(account.Id, account.RoleId, account.Fullname, account.Username, permissions);
             _authHelper.Signin(user);
 
             return operation.Succedded();
