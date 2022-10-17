@@ -13,10 +13,10 @@
     {
         <title>فروشگاه لوازم خانگی</title>
     }
-    
-    <meta name="keywords" content="@ViewData["keywords"]"/>
-    <meta name="description" content="@ViewData["metaDescription"]"/>
-    
+
+    <meta name="keywords" content="@ViewData["keywords"]" />
+    <meta name="description" content="@ViewData["metaDescription"]" />
+
     <!-- Vendor CSS -->
     <link href="~/Theme/assets/css/vendors.css" rel="stylesheet">
     <!-- Main CSS -->
@@ -55,10 +55,20 @@
     </div>
     <!-- end of scroll to top -->
     <!-- Vendor JS -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/Theme/assets/js/vendors.js"></script>
 
     <!-- Active JS -->
     <script src="~/Theme/assets/js/active.js"></script>
+    <script src="~/Theme/assets/js/plugins.js"></script>
+    <script src="~/Theme/assets/js/custom.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            updateCart();
+        });
+    </script>
 
 </body>
 
