@@ -27,3 +27,9 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryMa
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\obj\Debug\net5.0\InventoryManagement.Configuration.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\obj\Debug\net5.0\ref\InventoryManagement.Configuration.dll
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\obj\Debug\net5.0\InventoryManagement.Configuration.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\InventoryManagement.Configuration\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb

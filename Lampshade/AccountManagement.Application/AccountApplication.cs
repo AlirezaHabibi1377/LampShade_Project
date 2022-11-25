@@ -101,6 +101,11 @@ namespace AccountManagement.Application
             return _accountRepository.GetDetails(id);
         }
 
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _accountRepository.GetAccounts();
+        }
+
         public List<AccountViewModel> Search(AccountSearchModel command)
         {
             return _accountRepository.Search(command);

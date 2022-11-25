@@ -17,7 +17,11 @@ using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 using _01_LampshadeQuery.Contracts.Slide;
 using _01_LampshadeQuery.Query;
+using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Configuration.Permissions;
+using ShopManagement.Domain.OrderAgg;
+using ShopManagement.Domain.Services;
+using ShopManagement.Infrastructure.InventoryAcl;
 
 namespace ShopManagement.Configuration
 {
@@ -39,6 +43,13 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<ISlideQuery, SlideQuery>();
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
+
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IOrderApplication, OrderApplication>();
+
+            services.AddSingleton<ICartService, CartService>();
+
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
 
             services.AddTransient<IProductQuery, ProductQuery>();
 

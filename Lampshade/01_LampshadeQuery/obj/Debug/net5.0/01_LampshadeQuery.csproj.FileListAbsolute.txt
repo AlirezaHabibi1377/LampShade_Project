@@ -43,3 +43,9 @@ D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_Lampshad
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\CommentManagement.Infrastructure.EFCore.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
 D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\CommentManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.dll
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\AllProject_Asp.NET_2019\examples\MVC_Final_Project\Code\Lampshade\01_LampshadeQuery\bin\Debug\net5.0\AccountManagement.Infrastructure.EFCore.pdb
