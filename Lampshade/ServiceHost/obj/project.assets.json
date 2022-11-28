@@ -11,6 +11,31 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.9"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -280,7 +305,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -3625,6 +3650,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "Inventory.Application": "1.0.0",
           "InventoryManagement.Application.Contracts": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
@@ -3666,6 +3692,20 @@
         },
         "runtime": {
           "bin/placeholder/InventoryManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "InventoryManagement.Presentation.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "bin/placeholder/InventoryManagement.Presentation.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryManagement.Presentation.Api.dll": {}
         }
       },
       "ShopManagement.Application/1.0.0": {
@@ -3758,6 +3798,21 @@
         "runtime": {
           "bin/placeholder/ShopManagement.Infrastructure.InventoryAcl.dll": {}
         }
+      },
+      "ShopManagement.Presentation.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
+          "Microsoft.AspNet.WebApi.Core": "5.2.9",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Presentation.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Presentation.Api.dll": {}
+        }
       }
     }
   },
@@ -3776,6 +3831,41 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.9": {
+      "sha512": "cuVhPjjNMSEFpKXweMNBbsG4RUFuuZpFBm8tSyw309U9JEjcnbB6n3EPb4xwgcy9bJ38ctIbv5G8zXUBhlrPWw==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
+        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.9": {
+      "sha512": "9C0/gBUeMBjorRFSmR5Z2j5wznf9BP5SddN+OZE7X0BpXgivBZTZ42d0h8tIjJzSLHYVCU4HZBf51+cidCY4fQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.core/5.2.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "NET.icon.png",
+        "NET_Library_EULA_ENU.txt",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml",
+        "microsoft.aspnet.webapi.core.5.2.9.nupkg.sha512",
+        "microsoft.aspnet.webapi.core.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -4044,16 +4134,16 @@
         "microsoft.aspnetcore.mvc.abstractions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
-      "sha512": "ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
+      "sha512": "/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.xml",
-        "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
         "microsoft.aspnetcore.mvc.core.nuspec"
       ]
     },
@@ -10799,6 +10889,11 @@
       "path": "../InventoyManagmenet.Infrastructure.EFCore/InventoryManagement.Infrastructure.EFCore.csproj",
       "msbuildProject": "../InventoyManagmenet.Infrastructure.EFCore/InventoryManagement.Infrastructure.EFCore.csproj"
     },
+    "InventoryManagement.Presentation.Api/1.0.0": {
+      "type": "project",
+      "path": "../InventoryManagement.Presentation.Api/InventoryManagement.Presentation.Api.csproj",
+      "msbuildProject": "../InventoryManagement.Presentation.Api/InventoryManagement.Presentation.Api.csproj"
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application/ShopManagement.Application.csproj",
@@ -10828,6 +10923,11 @@
       "type": "project",
       "path": "../ShopManagement.Infrastructure.InventoryAcl/ShopManagement.Infrastructure.InventoryAcl.csproj",
       "msbuildProject": "../ShopManagement.Infrastructure.InventoryAcl/ShopManagement.Infrastructure.InventoryAcl.csproj"
+    },
+    "ShopManagement.Presentation.Api/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Presentation.Api/ShopManagement.Presentation.Api.csproj",
+      "msbuildProject": "../ShopManagement.Presentation.Api/ShopManagement.Presentation.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10838,10 +10938,12 @@
       "CommentManagement.Configuration >= 1.0.0",
       "DiscountManagement.Configuration >= 1.0.0",
       "InventoryManagement.Configuration >= 1.0.0",
+      "InventoryManagement.Presentation.Api >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "Nancy >= 2.0.0",
-      "ShopManagement.Configuration >= 1.0.0"
+      "ShopManagement.Configuration >= 1.0.0",
+      "ShopManagement.Presentation.Api >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10889,8 +10991,14 @@
             "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj": {
               "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Configuration\\InventoryManagement.Configuration.csproj"
             },
+            "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+              "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
+            },
             "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
               "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
+            },
+            "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
+              "projectPath": "D:\\AllProject_Asp.NET_2019\\examples\\MVC_Final_Project\\Code\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj"
             }
           }
         }
@@ -10941,5 +11049,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

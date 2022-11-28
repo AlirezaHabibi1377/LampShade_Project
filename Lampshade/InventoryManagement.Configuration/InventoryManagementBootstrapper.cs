@@ -12,6 +12,8 @@ using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
 using Inventory.Application;
 using InventoryManagement.Configuration.Permissions;
+using _01_LampshadeQuery.Contracts.Inventory;
+using _01_LampshadeQuery.Query;
 
 namespace InventoryManagement.Configuration
 {
@@ -21,6 +23,7 @@ namespace InventoryManagement.Configuration
         {
             services.AddTransient<IInventoryApplication, InventoryApplication>();
             services.AddTransient<IInventoryRepository, InventoryRepository>();
+            services.AddTransient<IInventoryQuery, InventoryQuery>();
 
             services.AddTransient<IPermissionExposer, InventoryPermissionExposer>();
 
