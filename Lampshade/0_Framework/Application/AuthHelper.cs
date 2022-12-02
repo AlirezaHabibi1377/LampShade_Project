@@ -115,6 +115,7 @@ namespace _0_Framework.Application
                 new Claim(ClaimTypes.Name, account.Fullname),
                 new Claim(ClaimTypes.Role, account.RoleId.ToString()),
                 new Claim("Username", account.Username), // Or Use ClaimTypes.NameIdentifier
+                new Claim("Mobile", account.Mobile), // Or Use ClaimTypes.NameIdentifier
                 new Claim("permissions", permissions),
                 //new Claim("Mobile", account.Mobile)
             };

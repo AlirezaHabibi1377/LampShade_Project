@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using _0_Framework.Application;
+using _0_Framework.Application.Sms;
+using IPE.SmsIrClient;
+using IPE.SmsIrClient.Models.Requests;
 using Microsoft.Extensions.Configuration;
 using ShopManagement.Application.Contracts.Order;
 using ShopManagement.Domain.OrderAgg;
@@ -16,13 +20,17 @@ namespace ShopManagement.Application
         private readonly IAuthHelper _authHelper;
         private readonly IConfiguration _configuration;
         private readonly IOrderRepository _orderRepository;
-        private readonly IShopInventoryAcl _shopInventoryAcl;
-        public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration, IShopInventoryAcl shopInventoryAcl)
+        private readonly IShopInventoryAcl _shopInventoryAcl; 
+        //private readonly ISmsService _smsService;
+        private readonly IShopAccountAcl _shopAccountAcl;
+        public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration, IShopInventoryAcl shopInventoryAcl, IShopAccountAcl shopAccountAcl)
         {
             _orderRepository = orderRepository;
             _authHelper = authHelper;
             _configuration = configuration;
             _shopInventoryAcl = shopInventoryAcl;
+            //_smsService = smsService;
+            _shopAccountAcl = shopAccountAcl;
         }
 
         public long PlaceOrder(Cart cart)
@@ -51,6 +59,13 @@ namespace ShopManagement.Application
 
             if (!_shopInventoryAcl.ReduceFromInventory(order.Items)) return "";
             _orderRepository.SaveChanges();
+
+
+            var user = _shopAccountAcl.GetAccountBy(order.AccountId);
+
+            var a = SmsService.SendAsync(user.mobile, $"{user.name} گرامی سفارش شما با شماره پیگیری {issueTrackingNo} با موفقیت ثبت و ارسال شد.");
+
+
             return issueTrackingNo;
 
         }

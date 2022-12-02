@@ -22,6 +22,7 @@ using ShopManagement.Configuration.Permissions;
 using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.Services;
 using ShopManagement.Infrastructure.InventoryAcl;
+using ShopManagement.Infrastructure.AccountAcl;
 
 namespace ShopManagement.Configuration
 {
@@ -50,6 +51,7 @@ namespace ShopManagement.Configuration
             services.AddSingleton<ICartService, CartService>();
 
             services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
 
             services.AddTransient<IProductQuery, ProductQuery>();
 
