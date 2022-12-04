@@ -20,10 +20,10 @@ namespace _0_Framework.Application.Sms
 
         public static async Task SendAsync(string mobile, string message)
         {
-            SmsIr smsIr = new SmsIr("PwQwWGVfp0bFbyDDpLWmCrp9h4ieYjS5CAxIs3JBhfQCB6igznpAvctsxqZ6xLdq");
+            SmsIr smsIr = new SmsIr("");
 
             var bulkSendResult = await smsIr.BulkSendAsync(
-                30007732006508, message, new string[] {mobile});
+                , message, new string[] {mobile});
         }
     }
 }
